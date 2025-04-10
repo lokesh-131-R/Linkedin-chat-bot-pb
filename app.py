@@ -114,7 +114,7 @@ with st.sidebar:
                 FROM DSX_DASHBOARDS_SANDBOX.HUBSPOT_REPORTING.VW_DEALS_LINE_ITEMS_DATA
             )
     """
-    pdf_path = r"C:\Users\LokeshRamesh\Documents\co_10 training\LLM\Linkedin Demo\Power_BI_User_Guide_1.pdf"
+    pdf_path = r"Power_BI_User_Guide_1.pdf"
     user_guide_text = extract_text_from_pdf(pdf_path)
 
     # Split text into chunks for better retrieval
@@ -131,8 +131,8 @@ with st.sidebar:
 
     Snowflack_data = pd.read_sql(query, conn)
 
-    json_path = r"C:\Users\LokeshRamesh\Documents\co_10 training\LLM\Linkedin Demo\DataModelSchema.json"
-    excel_path = r"C:\Users\LokeshRamesh\Documents\co_10 training\LLM\Linkedin Demo\Data DictionaryChat bot.xlsx"
+    json_path = r"DataModelSchema.json"
+    excel_path = r"Data DictionaryChat bot.xlsx"
 
     json_data = pd.read_json(json_path, encoding='utf-16')
     df = pd.DataFrame()
