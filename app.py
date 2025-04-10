@@ -53,7 +53,7 @@ with st.sidebar:
     SNOWFLAKE_USER_input = st.text_input("Snowflake User")
     SNOWFLAKE_PASSWORD_input = st.text_input("Snowflake Password")
     # Set your Gemini API Key
-    os.environ["GOOGLE_API_KEY"] = "API"
+    os.environ["GOOGLE_API_KEY"] = API
 
     llm = ChatGoogleGenerativeAI(
         model="gemini-1.5-pro",  # or "gemini-1.5-pro" if available
